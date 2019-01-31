@@ -8,6 +8,7 @@ public class Hooks {
 
 	TestContext testContext;
 
+	int a =1;
 	public Hooks(TestContext context) {
 		testContext = context;
 	}
