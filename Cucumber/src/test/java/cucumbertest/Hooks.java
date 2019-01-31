@@ -8,7 +8,7 @@ public class Hooks {
 
 	TestContext testContext;
 
-	int a =1;
+	int a =2;
 	public Hooks(TestContext context) {
 		testContext = context;
 	}
