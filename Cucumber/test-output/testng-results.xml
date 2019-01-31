@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="170048" started-at="2019-01-31T04:22:18Z" finished-at="2019-01-31T04:25:09Z">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="170048" started-at="2019-01-31T04:22:18Z" finished-at="2019-01-31T04:25:09Z">
+      <class name="TestNG_Test.SmokeTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="setup" is-config="true" duration-ms="21631" started-at="2019-01-31T04:22:19Z" finished-at="2019-01-31T04:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="tc01" duration-ms="17271" started-at="2019-01-31T04:22:40Z" finished-at="2019-01-31T04:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="teardown" is-config="true" duration-ms="4317" started-at="2019-01-31T04:22:57Z" finished-at="2019-01-31T04:23:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="setup" is-config="true" duration-ms="21960" started-at="2019-01-31T04:23:02Z" finished-at="2019-01-31T04:23:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc02()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="tc02" duration-ms="18152" started-at="2019-01-31T04:23:24Z" finished-at="2019-01-31T04:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="teardown" is-config="true" duration-ms="3895" started-at="2019-01-31T04:23:42Z" finished-at="2019-01-31T04:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="setup" is-config="true" duration-ms="17646" started-at="2019-01-31T04:23:46Z" finished-at="2019-01-31T04:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc03()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="tc03" duration-ms="18255" started-at="2019-01-31T04:24:03Z" finished-at="2019-01-31T04:24:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestNG_Test.SmokeTest@6093dd95]" name="teardown" is-config="true" duration-ms="3901" started-at="2019-01-31T04:24:22Z" finished-at="2019-01-31T04:24:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNG_Test.SmokeTest -->
+      <class name="TestNG_Test.SanityTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG_Test.SanityTest@5622fdf]" name="setup" is-config="true" duration-ms="20999" started-at="2019-01-31T04:24:26Z" finished-at="2019-01-31T04:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc04()[pri:0, instance:TestNG_Test.SanityTest@5622fdf]" name="tc04" duration-ms="18026" started-at="2019-01-31T04:24:47Z" finished-at="2019-01-31T04:25:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestNG_Test.SanityTest@5622fdf]" name="teardown" is-config="true" duration-ms="3933" started-at="2019-01-31T04:25:05Z" finished-at="2019-01-31T04:25:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNG_Test.SanityTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- Suite1 -->
+</testng-results>
