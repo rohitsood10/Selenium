@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Test Regression]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed tc01]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing test Regression]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="52947" started-at="2019-02-06T21:14:17Z" finished-at="2019-02-06T21:15:10Z">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="52947" started-at="2019-02-06T21:14:17Z" finished-at="2019-02-06T21:15:10Z">
+      <class name="TestNG_Test.SmokeTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG_Test.SmokeTest@2d554825]" name="setup" is-config="true" duration-ms="18900" started-at="2019-02-06T21:14:17Z" finished-at="2019-02-06T21:14:36Z">
+        </test-method>
+        <test-method status="PASS" signature="tc01()[pri:1, instance:TestNG_Test.SmokeTest@2d554825]" name="tc01" duration-ms="34005" started-at="2019-02-06T21:14:36Z" finished-at="2019-02-06T21:15:10Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

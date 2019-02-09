@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cucumbertest.TestSample">
+      <class name="TestNG_Test.SmokeTest">
         <methods>
-          <include name="testlogin"/>
+          <include name="tc01"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- cucumbertest.TestSample -->
+      </class> <!-- TestNG_Test.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

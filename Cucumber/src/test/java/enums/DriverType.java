@@ -2,8 +2,12 @@ package enums;
 
 public enum DriverType {
 	
+	HTML,
 	FIREFOX,
-	CHROME,
-	INTERNETEXPLORER
+	CHROMEHEADLESS,
+	INTERNETEXPLORER,
+	CHROME
+	
+	
 
 }

@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,17 +11,20 @@ import utils.Paths;
 public class SearchResultPage {
 	
 	WebDriver driver;
-	@FindBy(xpath=Paths.searchresultpage_selectproduct) private WebElement searchresultpage_selectproduct;
+	
+	By searchresultpage_selectproduct= By.xpath(Paths.searchresultpage_selectproduct);
+	
+	//@FindBy(xpath=Paths.searchresultpage_selectproduct) private WebElement searchresultpage_selectproduct;
 
 	public SearchResultPage(WebDriver driver) {
 		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, this);
 		
 	}
 	
 	public void clickproduct() {
-		searchresultpage_selectproduct.click();
-				
+		//searchresultpage_selectproduct.click();
+		driver.findElement(searchresultpage_selectproduct).click();		
 	}
 
 }

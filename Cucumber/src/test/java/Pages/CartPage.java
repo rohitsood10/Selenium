@@ -1,5 +1,9 @@
 package Pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,51 +12,51 @@ import org.openqa.selenium.support.PageFactory;
 import utils.Paths;
 
 public class CartPage {
-	WebDriver drive;
-	@FindBy(xpath=Paths.cartpage_shiptohomebtn) private WebElement cartpage_shiptohomebtn;
-	@FindBy(xpath=Paths.cartpage_checkoutbtn) private WebElement cartpage_checkoutbtn;
+	WebDriver driver;
+	By cartpage_shiptohomebtn= By.xpath(Paths.cartpage_shiptohomebtn);
+	By cartpage_checkoutbtn= By.xpath(Paths.cartpage_checkoutbtn);
+
+	//@FindBy(xpath=Paths.cartpage_shiptohomebtn) private WebElement cartpage_shiptohomebtn;
+	//@FindBy(xpath=Paths.cartpage_checkoutbtn) private WebElement cartpage_checkoutbtn;
  
 	public CartPage(WebDriver driver) {
-		this.drive=driver;
-		PageFactory.initElements(driver, this);
+		this.driver=driver;
+		//PageFactory.initElements(driver, this);
 	
 	}
 	
-	public void selectshiptohome() throws InterruptedException {
-		try {
-			Thread.sleep(5000);
-			boolean bValue = false;
-			bValue= cartpage_shiptohomebtn.isEnabled();
-			if (bValue=true) {
-				System.out.println("Ship to home is displayed");
-			}else {
-				System.out.println("Ship to home is not displayed");
-				
-			}
-			
-/*			if(cartpage_shiptohomebtn.isEnabled())
-				System.out.println("Ship to home is displayed");
-
-			if(cartpage_shiptohomebtn.isSelected())
-				System.out.println("Ship to home is selected"); */
-			
-			cartpage_shiptohomebtn.click();
+	public void selectshiptohome()  {
+	//driver.findElement(cartpage_shiptohomebtn)				
+		driver.findElement(cartpage_shiptohomebtn).click();
+		System.out.println("Entered ship radio function");
+		//String xpathExpression = "/";
+		List<WebElement> elements = driver.findElements(By.tagName("input"));
+		System.out.println("number of elements = "+ elements.size());
+		for(WebElement element : elements) {
+			//System.out.println("Entered loop");
+		    if(element.getAttribute("type").equals("radio")) {
+		    	if(element.getAttribute("value").equals("Ship"))
+			    	{
+			    		//element.click();
+			    		System.out.println("Success: found Pickup");
+			    		driver.findElement(cartpage_shiptohomebtn).click();
+			    		break;
+			    	}
+		    }
 		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
-			Thread.sleep(5000);
-			cartpage_shiptohomebtn.click();		}
+		
+		
 		
 	}
 	
 	public void clickcheckoutbtn() throws InterruptedException {
 		try {
-			cartpage_checkoutbtn.click();
+			driver.findElement(cartpage_checkoutbtn).click();
 		}
 		catch(org.openqa.selenium.StaleElementReferenceException ex)
 		{
 			Thread.sleep(5000);
-			cartpage_checkoutbtn.click();		}
+			driver.findElement(cartpage_checkoutbtn).click();		}
 		
 	}
 

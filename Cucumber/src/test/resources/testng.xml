@@ -5,9 +5,7 @@
   <test name="Regression">
 	<classes>
        <class name="TestNG_Test.SmokeTest" />
-       <class name="TestNG_Test.SanityTest"/>
-          
-    </classes>
+       </classes>
         
   </test>
 </suite>

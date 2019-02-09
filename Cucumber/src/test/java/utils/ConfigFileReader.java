@@ -12,7 +12,7 @@ import enums.EnvironmentType;
 public class ConfigFileReader {
 	
 	private Properties properties;
-	private final String propertyFilePath= "C:\\Users\\rohitsoo\\eclipse-workspace\\Cucumber\\src\\test\\java\\configs\\configuration.properties";
+	private final String propertyFilePath= "C:\\Git\\Selenium\\Selenium\\Cucumber\\src\\test\\java\\configs\\configuration.properties";
 
 	public ConfigFileReader() {
 		BufferedReader reader;
@@ -59,9 +59,13 @@ public class ConfigFileReader {
 	
 	public DriverType getBrowser() {
 		String browserName = properties.getProperty("browser");
-		if(browserName == null || browserName.equals("chrome")) return DriverType.CHROME;
+		System.out.println("Browser proper name "+browserName);
+		
+		if(browserName == null || browserName.equalsIgnoreCase("chrome")) return DriverType.CHROME;
+		else if(browserName.equalsIgnoreCase("CHROMEHEADLESS")) return DriverType.CHROMEHEADLESS;
+		else if(browserName.equalsIgnoreCase("HTML")) return DriverType.HTML;
 		else if(browserName.equalsIgnoreCase("firefox")) return DriverType.FIREFOX;
-		else if(browserName.equals("iexplorer")) return DriverType.INTERNETEXPLORER;
+		else if(browserName.equalsIgnoreCase("iexplorer")) return DriverType.INTERNETEXPLORER;
 		else throw new RuntimeException("Browser Name Key value in Configuration.properties is not matched : " + browserName);
 	}
 

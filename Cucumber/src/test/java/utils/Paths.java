@@ -20,7 +20,7 @@ public class Paths {
 	public static final String productpage_viewcart_checkoutbtn = "//button[@class='checkout modal-button']";
 	
 	//CartPage
-		public static final String cartpage_shiptohomebtn = "//input[@id='shipping_850520ec1bb14a76a326a9cf0124e2f7_shipHome']";
+		public static final String cartpage_shiptohomebtn = "//tbody[@class='mz-table-cart-items']/tr[1]/td[3]/div[3]/input[1]";
 		public static final String cartpage_checkoutbtn = "//div[@class='buttons']//button[contains(text(),'Checkout')]";
   
 	
