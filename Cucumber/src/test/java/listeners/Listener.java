@@ -15,15 +15,21 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.xml.XmlSuite;
 
-public class Listener implements ITestListener  {
 
+import TestNG_Test.BaseTest;
+
+public class Listener extends BaseTest implements ITestListener  {
+
+	
+	 private static String getTestMethodName(ITestResult iTestResult) {
+	        return iTestResult.getMethod().getConstructorOrMethod().getName();
+	    }
 	// This belongs to ISuiteListener and will execute before the Suite start
 
 		//@Override
 		public void onStart(ISuite arg0) {
-
-			Reporter.log("About to begin executing Suite " + arg0.getName(), true);
-
+			 System.out.println("I am in onStart method " + arg0.getName());
+		    
 		}
 
 		// This belongs to ISuiteListener and will execute, once the Suite is finished
@@ -31,8 +37,9 @@ public class Listener implements ITestListener  {
 		//@Override
 
 		public void onFinish(ISuite arg0) {
-
-			Reporter.log("About to end executing Suite " + arg0.getName(), true);
+			System.out.println("I am in onFinish method " + arg0.getName());
+	        //Do tier down operations for extentreports reporting!
+	       
 
 		}
 

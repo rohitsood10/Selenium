@@ -8,9 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import com.gargoylesoftware.htmlunit.BrowserVersion;
 
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import enums.*;
 

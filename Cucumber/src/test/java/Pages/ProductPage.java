@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utils.Paths;
+import utils.wrapper;
 
 public class ProductPage {
 	WebDriver driver;
@@ -24,15 +25,17 @@ public class ProductPage {
 		
 	}
 	
-	public void addtocartbtn() {
+	public void addtocartbtn() throws InterruptedException {
 			//productpage_addtocartbtn.click();
-			driver.findElement(productpage_addtocartbtn).click();
+			//driver.findElement(productpage_addtocartbtn).click();
+			wrapper.click(driver, productpage_addtocartbtn);
 
 	}
 	
 	public void checkoutbtn() throws InterruptedException {
 		try {
-			driver.findElement(productpage_viewcart_checkoutbtn).click();
+			//driver.findElement(productpage_viewcart_checkoutbtn).click();
+			wrapper.click(driver, productpage_viewcart_checkoutbtn);
 
 			//productpage_viewcart_checkoutbtn.click();
 		}
@@ -40,7 +43,9 @@ public class ProductPage {
 		{
 			Thread.sleep(5000);
 			//productpage_viewcart_checkoutbtn.click();
-			driver.findElement(productpage_viewcart_checkoutbtn).click();
+			//driver.findElement(productpage_viewcart_checkoutbtn).click();
+			wrapper.click(driver, productpage_viewcart_checkoutbtn);
+
 
 		}
 		

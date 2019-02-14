@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utils.Paths;
+import utils.wrapper;
 
 public class SearchResultPage {
 	
@@ -22,9 +23,11 @@ public class SearchResultPage {
 		
 	}
 	
-	public void clickproduct() {
+	public void clickproduct() throws InterruptedException {
 		//searchresultpage_selectproduct.click();
-		driver.findElement(searchresultpage_selectproduct).click();		
+		//driver.findElement(searchresultpage_selectproduct).click();	
+		wrapper.click(driver, searchresultpage_selectproduct);
+
 	}
 
 }

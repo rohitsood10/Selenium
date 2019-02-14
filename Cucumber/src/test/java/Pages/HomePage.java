@@ -35,16 +35,17 @@ public class HomePage {
 	}
 	
 	//enter product id in search field
-		public  void clickSearchbtn() {
+		public  void clickSearchbtn() throws InterruptedException {
 			//driver.findElement(homepage_searchbutton).click();
 			//driver.findElement(homepage_searchbutton).click();
-			wrapper.btn_click(driver.findElement(homepage_searchbutton));
+			//wrapper.click(driver.findElement(homepage_searchbutton));
+			wrapper.click(driver, homepage_searchbutton);
 			//homepage_searchbutton.click();
 			
 		}
 		
 	//enter product id in search field
-		public  void SearchProduct(String ProductID) {
+		public  void SearchProduct(String ProductID) throws InterruptedException {
 			setsearchfieldtxt(ProductID);
 			clickSearchbtn();
 					
